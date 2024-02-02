@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithyms/Algorithyms.iml" filepath="$PROJECT_DIR$/Algorithyms/Algorithyms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuildRunTimeExceptions/BuildRunTimeExceptions.iml" filepath="$PROJECT_DIR$/BuildRunTimeExceptions/BuildRunTimeExceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaEgitim-2024.iml" filepath="$PROJECT_DIR$/.idea/JavaEgitim-2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jump/Jump.iml" filepath="$PROJECT_DIR$/Jump/Jump.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LogicalExceptions/LogicalExceptions.iml" filepath="$PROJECT_DIR$/LogicalExceptions/LogicalExceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Loops/Loops.iml" filepath="$PROJECT_DIR$/Loops/Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Methods/Methods.iml" filepath="$PROJECT_DIR$/Methods/Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RunTimeExceptions/RunTimeExceptions.iml" filepath="$PROJECT_DIR$/RunTimeExceptions/RunTimeExceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/While/While.iml" filepath="$PROJECT_DIR$/While/While.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ifElse/ifElse.iml" filepath="$PROJECT_DIR$/ifElse/ifElse.iml" />
+    </modules>
+  </component>
+</project>

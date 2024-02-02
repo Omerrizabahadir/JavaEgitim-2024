@@ -1,0 +1,2 @@
+java8 kısa versiyonunu kullandık
+%d,9
