@@ -8,11 +8,18 @@ int numDoors;
         this.model=model;
         this.year=year;
         this.numDoors=numDoors;
+
     }
-    void start(){
+
+    @Override
+    void start() {
         System.out.println("Car is starting");
+        super.start();
     }
-    void  stop(){
+
+    @Override
+    void stop() {
         System.out.println("Car is stopping");
+        super.stop();
     }
 }

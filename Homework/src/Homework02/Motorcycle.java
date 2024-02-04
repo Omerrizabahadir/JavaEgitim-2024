@@ -9,9 +9,12 @@ public class Motorcycle extends Vehicle{
         this.year=year;
         this.hasSidecar=hasSidecar;
     }
+
+    @Override
     void start(){
         System.out.println("Motorcycle is starting");
     }
+    @Override
     void stop(){
         System.out.println("Motorcycle is stopping");
     }

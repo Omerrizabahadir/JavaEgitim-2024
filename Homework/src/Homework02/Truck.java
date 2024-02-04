@@ -9,10 +9,12 @@ public class Truck extends Vehicle{
         this.year=year;
         this.cargoCapacity=cargoCapacity;
     }
+    @Override
     void  start(){
         System.out.println("Truck is starting");
     }
-    void stop(){
+   @Override
+   void stop(){
         System.out.println("Truck is stopping");
     }
 }
