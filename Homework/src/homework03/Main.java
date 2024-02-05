@@ -31,6 +31,7 @@ public class Main {
             System.out.print(" \t " + newArray);
             toplam = toplam + newArray;
         }
+
         System.out.println("\nDizinin sayıları toplamı : " + toplam);
         System.out.println("Dizideki sayıların ortalaması  : " + (double) toplam / arrays.length);
     }
