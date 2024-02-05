@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+/*
+1-100 arası kullanıcıdan sayı alıp bu sayıları dizinin içine al.
+ toplam ve ortalamalarını bularak ekrana yazdır.
+ */
 
         int toplam = 0;
         int ortalama = 0;
