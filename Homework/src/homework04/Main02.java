@@ -12,8 +12,6 @@ public class Main02 {
         sonra bu sayıların ortalamasını,toplamını, tek çift değerlerini yazan program
          */
 
-         */
-
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Kaç adet sayı gireceksiniz ");
