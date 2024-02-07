@@ -18,37 +18,39 @@ public class Main {
         int[] userNumberArray = new int[userNumber];
         int sum=0;
         int average=0;
-        String tekSayi=" Tek sayı";
-        String ciftSayi=" Çift Sayı";
-
-
-
+        int sayac1=0;
         for (int i = 0; i < userNumber; i++) {
-            System.out.println(i+". elemanı giriniz");
+            System.out.println((sayac1+1) + ". sayıyı giriniz");
             userNumberArray[i] = scanner.nextInt();
-            sum=sum+userNumberArray[i];
-            if (userNumberArray[i]%2==0){
-
-                System.out.println(userNumberArray[i]+ciftSayi);
-            }else{
-
-
-                System.out.println(userNumberArray[i]+tekSayi);
-            }
+            sayac1++;
+            sum = sum + userNumberArray[i];
         }
 
         for (int i = 0; i < userNumberArray.length; i++) {
-        }
 
+        }
 
         System.out.println("Oluşturduğunuz dizi :" + Arrays.toString(userNumberArray));
         System.out.println("Dizideki sayıların toplamı :"+sum);
-        System.out.println("Dizideki sayıların toplamı :"+(double)sum/userNumber);
+        System.out.println("Dizideki sayıların ortalaması :"+(double)sum/userNumber);
 
 
+        int sayac2=0,sayac3=0;
+        for (int i=0;i<userNumber;i++){
+            if (userNumberArray[i]%2==0 || userNumberArray[i]==0){
+                System.out.println(userNumberArray[i]+" çifttir");
+                sayac2++;
+            }else{
+                System.out.println(userNumberArray[i]+" tektir");
+                sayac3++;
+            }
+        }
+            System.out.println("Dizideki çift sayılar "+sayac2+" adet");
+            System.out.println("Dizideki tek sayılar "+sayac3+" adet");
+        }
     }
 
-}
+
 
 
 
