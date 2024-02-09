@@ -1,3 +1,5 @@
+package conditions_examples;
+
 import java.util.Scanner;
 
 public class Main {
