@@ -1,4 +1,4 @@
-package protected_example;
+package protected_examples;
 
 public class ProtectedMethodExample {
     public static void main(String[] args) {

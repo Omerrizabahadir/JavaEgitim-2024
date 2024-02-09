@@ -1,4 +1,4 @@
-package geeks_for_geeks_method_examples;
+package geeks_for_geeks_method_examples_solutions;
 
 public class ReverseTheArray {
     //diziyi tersine çevirme

@@ -1,6 +1,6 @@
 package access_specifiers;
 
-import protected_example.ProtectedMethodExample;
+import protected_examples.ProtectedMethodExample;
 
 public class ProtectedAccessSpecifiersExample01 {
     public static void main(String[] args) {

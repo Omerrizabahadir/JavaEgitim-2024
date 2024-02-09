@@ -1,7 +1,5 @@
 package return_methods;
 
-import java.util.Random;
-
 public class ReturnTypeMethodExample01 {
     public static void main(String[] args) {
 

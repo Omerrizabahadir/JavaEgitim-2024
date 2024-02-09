@@ -1,7 +1,5 @@
 package void_methods;
 
-import java.util.Scanner;
-
 public class VoidMethodExample01 {
     public static void main(String[] args) {
 

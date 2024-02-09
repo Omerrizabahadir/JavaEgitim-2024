@@ -1,4 +1,4 @@
-package call_method;
+package call_methods;
 
 public class Main {
     public int addNumbers(int a, int b){
