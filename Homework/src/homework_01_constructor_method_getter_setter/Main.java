@@ -1,4 +1,4 @@
-package homework_01;
+package homework_01_constructor_method_getter_setter;
 
 
 public class Main {
