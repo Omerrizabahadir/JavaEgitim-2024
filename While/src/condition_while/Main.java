@@ -1,3 +1,5 @@
+package condition_while;
+
 import java.util.Scanner;
 
 public class Main {
