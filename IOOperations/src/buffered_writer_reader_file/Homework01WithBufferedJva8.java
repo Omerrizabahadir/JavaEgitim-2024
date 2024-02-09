@@ -1,3 +1,5 @@
+package buffered_writer_reader_file;
+
 import java.io.*;
 import java.util.Scanner;
 
