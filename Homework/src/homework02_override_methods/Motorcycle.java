@@ -1,12 +1,9 @@
-package Homework02;
+package homework02_override_methods;
 
 public class Motorcycle extends Vehicle{
     boolean hasSidecar;
     public Motorcycle(String brand, String model, int year,boolean hasSidecar) {
         super(brand, model, year);
-        this.brand=brand;
-        this.model=model;
-        this.year=year;
         this.hasSidecar=hasSidecar;
     }
 

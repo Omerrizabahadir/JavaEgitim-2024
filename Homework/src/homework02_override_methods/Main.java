@@ -1,4 +1,4 @@
-package Homework02;
+package homework02_override_methods;
 
 public class Main {
     public static void main(String[] args) {
