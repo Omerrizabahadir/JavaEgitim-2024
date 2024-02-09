@@ -1,3 +1,5 @@
+package exceptions_class_studying;
+
 public class HandlingException02 {
     public static void main(String[] args) {
         String name="gdgg";

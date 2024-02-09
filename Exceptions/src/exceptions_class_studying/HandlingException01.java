@@ -1,3 +1,5 @@
+package exceptions_class_studying;
+
 public class HandlingException01 {
     public static void main(String[] args) {
         int number1=5;

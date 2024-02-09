@@ -1,3 +1,5 @@
+package exceptions_class_studying;
+
 import java.util.Objects;
 
 public class NullPointerExceptions {

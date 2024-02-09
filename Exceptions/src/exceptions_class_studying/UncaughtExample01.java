@@ -1,3 +1,5 @@
+package exceptions_class_studying;
+
 public class UncaughtExample01 {
 
    // try catch olmayan metodlar uncaughtexception hatası  verir
