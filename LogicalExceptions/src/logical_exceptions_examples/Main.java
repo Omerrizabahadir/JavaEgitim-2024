@@ -1,3 +1,5 @@
+package logical_exceptions_examples;
+
 public class Main {
     public static void main(String[] args) {
        int number1=4;

@@ -1,3 +1,5 @@
+package logical_exceptions_examples;
+
 public class LogicalExceptions02 {
     public static void main(String[] args) {
         int result1 = 5 + 4 * 3/2;

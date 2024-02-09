@@ -1,3 +1,5 @@
+package logical_exceptions_examples;
+
 public class LogicalExceptions03 {
     public static void main(String[] args) {
         // Declare the variable.
