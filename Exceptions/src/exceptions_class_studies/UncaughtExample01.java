@@ -1,4 +1,4 @@
-package exceptions_class_studying;
+package exceptions_class_studies;
 
 public class UncaughtExample01 {
 

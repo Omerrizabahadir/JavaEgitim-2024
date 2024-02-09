@@ -1,4 +1,4 @@
-package exceptions_class_studying;
+package exceptions_class_studies;
 
 import java.io.FileWriter;
 import java.io.IOException;
