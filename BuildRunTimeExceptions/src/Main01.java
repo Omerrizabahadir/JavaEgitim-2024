@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {//derleme hatası sınıf isimleri uyuşmak zorunda
+public class Main01 {//derleme hatası sınıf isimleri uyuşmak zorunda
     public static void main(String[] args) {
 
         Scanner scanner=new Scanner (System.in); //parantezi kapatmazsak veya zorunlu olan ifadeyi kullanmazsak
