@@ -1,6 +1,5 @@
 package array_examples;
 
-import java.net.MulticastSocket;
 import java.util.Scanner;
 
 public class Homework03 {

@@ -1,8 +1,6 @@
 package array_examples;
 
-import java.sql.Array;
 import java.util.Random;
-import java.util.Scanner;
 
 public class ArraySiralama {
     //Bilgisayar 1 ile 100 arasında rastgele 10 sayı üretiyor.
