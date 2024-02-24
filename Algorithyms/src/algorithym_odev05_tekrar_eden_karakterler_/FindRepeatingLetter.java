@@ -1,4 +1,4 @@
-package algorithyms_repeating_letter__with_Scanner;
+package algorithym_odev05_tekrar_eden_karakterler_;
 
 import java.util.Scanner;
 //Önce sayı alıp saonra kelime istiyoruz.

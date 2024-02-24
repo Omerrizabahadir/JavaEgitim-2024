@@ -1,4 +1,4 @@
-package algorithyms_repeating_letter__with_Scanner;
+package algorithym_odev05_tekrar_eden_karakterler_;
 
 public class MainOfRepeatingLetter {
     public static void main(String[] args) {
