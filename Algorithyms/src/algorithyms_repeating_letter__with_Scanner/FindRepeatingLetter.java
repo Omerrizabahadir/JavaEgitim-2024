@@ -1,12 +1,13 @@
-package algorithyms_homeworh05_frequency_of_a_in_substring_with_Scanner_03;
+package algorithyms_repeating_letter__with_Scanner;
 
 import java.util.Scanner;
+//Önce sayı alıp saonra kelime istiyoruz.
 
 public class FindRepeatingLetter {
     public String getWordFromUser() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Kaç harfli bir kelime oluşturmak istersiniz?");
-        int wordLength = scanner.nextInt();
+        scanner.nextInt();
         System.out.println("a,b,c harfleriyle bir kelime yazınız");
         String word = scanner.next();
 
@@ -18,19 +19,19 @@ public class FindRepeatingLetter {
         char[] letters = word.toCharArray();
         int numberOfA = 0, numberOfB = 0, numberOfC = 0;
 
-        for (int i=0;i<word.length();i++){
-            if (letters[i] =='a'){
+        for (int i = 0; i < word.length(); i++) {
+            if (letters[i] == 'a') {
                 numberOfA++;
-            } else if (letters[i]=='b') {
-               numberOfB++;
-            } else if (letters[i]=='c') {
+            } else if (letters[i] == 'b') {
+                numberOfB++;
+            } else if (letters[i] == 'c') {
                 numberOfC++;
             }
         }
 
-        System.out.println(" a harfinden "+numberOfA+" adet vardır");
-        System.out.println(" b harfinden "+numberOfB+" adet vardır");
-        System.out.println(" c harfinden "+numberOfC+" adet vardır");
+        System.out.println(" a harfinden " + numberOfA + " adet vardır");
+        System.out.println(" b harfinden " + numberOfB + " adet vardır");
+        System.out.println(" c harfinden " + numberOfC + " adet vardır");
         return numberOfA;
     }
 }

@@ -1,4 +1,4 @@
-package algorithyms_homeworh05_frequency_of_a_in_substring_with_Scanner_03;
+package algorithyms_repeating_letter__with_Scanner;
 
 public class MainOfRepeatingLetter {
     public static void main(String[] args) {
