@@ -1,14 +1,15 @@
-package map_example;
+package map_example_HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashMap02 {
+public class HashMapExample02 {
 
     public static void main(String[] args) {
         Map<Integer,String>userMap=new HashMap<>();
         userMap.put(123,"Hasan");
         userMap.put(124,"null");
+        userMap.put(null,null);
 
         System.out.println(userMap);
 

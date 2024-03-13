@@ -1,7 +1,7 @@
-package map_example;
+package map_example_HashMap;
 
 import java.util.HashMap;
-import java.util.Map.Entry;
+
 public class IterateThroughHashMap {
     public static void main(String[] args) {
        // create a hashmap

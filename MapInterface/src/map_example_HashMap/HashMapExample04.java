@@ -1,8 +1,8 @@
-package map_example;
+package map_example_HashMap;
 
 import java.util.HashMap;
 
-public class HashMap04 {
+public class HashMapExample04 {
     public static void main(String[] args) {
         //create an HashMap
         HashMap<String,Integer>primeNumbers=new HashMap<>();

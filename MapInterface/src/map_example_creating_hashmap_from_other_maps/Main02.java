@@ -1,4 +1,4 @@
-package map_example_creating_hashmap_from_other_maps;
+package map_example_creating_Hashmap_from_other_maps;
 
 import java.util.HashMap;
 import java.util.Map;
