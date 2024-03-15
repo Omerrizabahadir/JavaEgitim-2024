@@ -1,6 +1,7 @@
 package example_linkedList_with_methods_add_get_remove_set_indexOf;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.LinkedList;
 
 public class Main {
