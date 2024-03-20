@@ -1,0 +1,9 @@
+package state_design_pattern_home.sculb.edu_game_development;
+
+public class SurvivalState implements PlayerState{
+    @Override
+    public void action(Player player) {
+        player.survive();
+        player.firePistol();
+    }
+}
