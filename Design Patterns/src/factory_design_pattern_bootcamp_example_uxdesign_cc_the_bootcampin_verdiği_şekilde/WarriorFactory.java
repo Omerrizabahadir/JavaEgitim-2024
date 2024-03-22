@@ -1,4 +1,4 @@
-package factory_design_pattern_bootcamp_example_uxdesign_cc_the_factory_design_pattern;
+package factory_design_pattern_bootcamp_example_uxdesign_cc_the_bootcampin_verdiği_şekilde;
 
 public class WarriorFactory extends CharacterFactory{
     @Override

@@ -1,4 +1,4 @@
-package factory_design_pattern_bootcamp_example_uxdesign_cc_the_factory_design_pattern;
+package factory_design_pattern_bootcamp_example02_hocanın_yaptığı_şekilde;
 
 public class Warrior implements Character {
     @Override
