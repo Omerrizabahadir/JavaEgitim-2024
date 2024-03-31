@@ -1,4 +1,4 @@
-package predicate_example01;
+package predicate.predicate_example01;
 
 import java.util.Arrays;
 import java.util.List;
