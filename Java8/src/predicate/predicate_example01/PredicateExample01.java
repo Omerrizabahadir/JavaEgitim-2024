@@ -2,6 +2,7 @@ package predicate.predicate_example01;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -47,5 +48,7 @@ public class PredicateExample01 {
         List<String>namesStartsWithH2=names.stream().filter(predicate1).collect(Collectors.toList());
         System.out.println("Array of Names start with h  java 16 yazımı : "+namesStartsWithH1);
         System.out.println("Array of Names start with h java 8 yazımı : "+namesStartsWithH2);
+
+
     }
 }
