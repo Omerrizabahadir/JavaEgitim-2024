@@ -1,4 +1,4 @@
-package predicate_java8_predicate_metodu_öncesi;
+package predicate.predicate_java8_predicate_metodu_öncesi;
 
 public class FindLetterStartWithHToTheList {
     public static void main(String[] args) {
