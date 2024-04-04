@@ -1,4 +1,4 @@
-package optional_examples.optional_homework_05;
+package optional_homeworks.optional_homework_05;
 
 import java.util.Optional;
 

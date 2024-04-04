@@ -1,4 +1,4 @@
-package optional_examples.optional_homework_01;
+package optional_homeworks.optional_homework_01;
 
 public class Car {
     private  String brand;
