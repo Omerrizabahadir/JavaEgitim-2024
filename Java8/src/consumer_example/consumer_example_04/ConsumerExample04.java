@@ -1,4 +1,4 @@
-package consumer_example_04;
+package consumer_example.consumer_example_04;
 
 import java.util.ArrayList;
 import java.util.List;

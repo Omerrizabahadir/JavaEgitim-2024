@@ -1,4 +1,4 @@
-package consumer_example_01;
+package consumer_example.consumer_example_01;
 
 import java.util.function.Consumer;
 
