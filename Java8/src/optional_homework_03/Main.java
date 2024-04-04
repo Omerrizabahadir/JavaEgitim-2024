@@ -12,7 +12,7 @@ public class Main {
         Integer result1=Optional.ofNullable(main.number)
                 .orElse(0);
 
-        System.out.println("Number : "+main.number);
+        System.out.println("Number : "+result1);
 
         System.out.println("******************");
 
