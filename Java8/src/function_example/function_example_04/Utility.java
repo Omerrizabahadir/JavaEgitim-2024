@@ -1,4 +1,4 @@
-package function_example_04;
+package function_example.function_example_04;
 
 public class Utility {
     public static int calculateLengthOfTemp(String str){

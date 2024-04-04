@@ -1,4 +1,4 @@
-package function_example_02;
+package function_example.function_example_02;
 
 import java.util.function.Function;
 

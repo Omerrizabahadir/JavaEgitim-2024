@@ -1,4 +1,4 @@
-package function_homewok_java2blog_remove_the_duplicate_elements_from_the_list;
+package function_example.function_homewok_java2blog_remove_the_duplicate_elements_from_the_list;
 
 import java.util.Arrays;
 import java.util.List;

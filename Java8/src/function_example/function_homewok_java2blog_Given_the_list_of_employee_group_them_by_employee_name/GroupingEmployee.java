@@ -1,4 +1,4 @@
-package function_homewok_java2blog_Given_the_list_of_employee_group_them_by_employee_name;
+package function_example.function_homewok_java2blog_Given_the_list_of_employee_group_them_by_employee_name;
 
 
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static function_homewok_java2blog_Given_the_list_of_employee_group_them_by_employee_name.Employee.createEmployeeList;
+import static function_example.function_homewok_java2blog_Given_the_list_of_employee_group_them_by_employee_name.Employee.createEmployeeList;
 
 
 public class GroupingEmployee {

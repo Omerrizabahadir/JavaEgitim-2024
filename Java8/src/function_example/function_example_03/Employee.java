@@ -1,4 +1,4 @@
-package function_example_03;
+package function_example.function_example_03;
 
 public class Employee {
     private  String name;
