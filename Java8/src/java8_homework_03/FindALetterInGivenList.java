@@ -13,7 +13,7 @@ public class FindALetterInGivenList {
 
         String finfLetterInWord = String.valueOf(listOfWords
                 .stream()
-                .filter(e -> e.contains("as"))
+                .filter(e -> e.contains("a"))
                 .collect(Collectors.toList()));
 
         System.out.println(finfLetterInWord);
