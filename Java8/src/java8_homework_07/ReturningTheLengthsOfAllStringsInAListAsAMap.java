@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class ReturningTheLengthsOfAllStringsInAListAsAMap {
     /*
     Bir liste içerisindeki tüm stringlerin uzunluklarını
-    bir harita (Map) olarak döndüren bir programı yazınız.
+    bir harita (Map) olarak döndüren bir programı yazınız .
      */
 
     public static void main(String[] args) {
