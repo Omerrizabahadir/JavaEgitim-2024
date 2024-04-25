@@ -1,5 +1,0 @@
-id :1
-name : gökçe
-age : 35
-phone number : 424434434
-email : gokce@dggd
