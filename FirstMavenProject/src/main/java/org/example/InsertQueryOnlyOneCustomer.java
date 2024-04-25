@@ -8,19 +8,16 @@ import java.sql.SQLException;
 public class InsertQueryOnlyOneCustomer {
     //BİR TANE KAYIT YAPIYOR
     public static void main(String[] args) {
-        String jdbcUrl = "jdbc:postgresql://localhost:5432/thirddb";
-        String username = "postgres";
-        String password = "123456";
+        PostgresqlDbConnection postgresqlDbConnection = new PostgresqlDbConnection();
 
-
-        try {
-            //veritabanı bağlantı oluşturma
-            Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
-
-            //INSERT
+        try (Connection connection = postgresqlDbConnection.getConnection()) {
             String insertSql = "insert into customers (customer_id,customer_name,contact_name,address,city,postal_code,country) values (?,?,?,?,?,?,?)";
             PreparedStatement insertStatement = connection.prepareStatement(insertSql);
-            insertStatement.setInt(1, 88);
+
+            //veritabanı bağlantı oluşturma
+
+            //INSERT
+            insertStatement.setInt(1, 88); //Burdaki id kayıtlıyken çalıştırırsan aynı id var diye hata verecektir
             insertStatement.setString(2, "hasan");
             insertStatement.setString(3, "hkd");
             insertStatement.setString(4, "etimesgut");

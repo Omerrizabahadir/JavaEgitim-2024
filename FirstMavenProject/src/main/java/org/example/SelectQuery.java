@@ -4,16 +4,11 @@ import java.sql.*;
 
 public class SelectQuery {
     public static void main(String[] args) {
-        String jdbcUrl = "jdbc:postgresql://localhost:5432/thirddb";
-        String username = "postgres";
-        String password = "123456";
+        PostgresqlDbConnection postgresqlDbConnection=new PostgresqlDbConnection();
+        String selectSql = "select * from customers";
+        try(Connection connection=postgresqlDbConnection.getConnection()) {
 
-
-        try {
-            Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
             //SELECT sorgusu
-
-            String selectSql = "select * from customers";
             PreparedStatement selectStatement = connection.prepareStatement(selectSql);
 
             /*tablonun çıktısının sonucunu dönmesi için sonuç döndür dicez,
