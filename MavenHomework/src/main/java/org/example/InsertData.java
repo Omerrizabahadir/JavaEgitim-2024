@@ -46,7 +46,6 @@ public class InsertData {
                     break;
                 }
             }
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

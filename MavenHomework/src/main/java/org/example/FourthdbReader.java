@@ -15,13 +15,13 @@ public class FourthdbReader {
             String selectSql = "select * from persons";
             PreparedStatement selectStatement = connection.prepareStatement(selectSql);
             ResultSet resultSet = selectStatement.executeQuery();
+
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
                 int age = resultSet.getInt("age");
                 String phoneNumber = resultSet.getString("phone_number");
                 String email = resultSet.getString("e_mail");
-
 
                 FileWriter file = new FileWriter("customer.txt");
                 BufferedWriter output = new BufferedWriter(file);
@@ -31,7 +31,7 @@ public class FourthdbReader {
                     resultSet.getInt("age");
                     resultSet.getString("phone_number");
                     resultSet.getString("e_mail");
-                    
+
                     file.write("id :" + id + "\nname : " + name + "\nage : " + age + "\nphone number : " + phoneNumber + "\nemail : " + email);
                 }
                 file.close();

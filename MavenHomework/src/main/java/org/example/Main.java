@@ -15,6 +15,7 @@ public class Main {
      */
 
     public static void main(String[] args) {
+
         PostgresqlDbConnection postgresqlDbConnection=new PostgresqlDbConnection();
         postgresqlDbConnection.getConnection();
         InsertData insertData = new InsertData();

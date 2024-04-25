@@ -13,6 +13,7 @@ public class PostgresqlDbConnection {
 
         try {
             return DriverManager.getConnection(jdbcUrl,username,password);
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
