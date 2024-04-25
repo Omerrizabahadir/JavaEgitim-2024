@@ -8,48 +8,50 @@ import java.util.Scanner;
 
 public class InsertData {
 
-    public  void insertData() {
+    public void insertData() {
+        PostgresqlDbConnection postgresqlDbConnection = new PostgresqlDbConnection();
 
-        String jdbcUrl = "jdbc:postgresql://localhost:5432/fourtdb";
-        String username = "postgres";
-        String password = "123456";
+        try (Connection connection = postgresqlDbConnection.getConnection()) {
+            Scanner scanner = new Scanner(System.in);
 
 
-        {
-            try {
-                Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
-                Scanner scanner = new Scanner(System.in);
-                boolean isContinue = true;
+            while (true) {
+                System.out.println("id :");
+                int id = scanner.nextInt();
+                System.out.println("isim :");
+                String name = scanner.next();
+                System.out.println("yaş :");
+                int age = scanner.nextInt();
+                System.out.println("telefon :");
+                String phoneNumber = scanner.next();
+                System.out.println("email :");
+                String email = scanner.next();
 
-                while (isContinue) {
-                    System.out.println("id :");
-                    int id = scanner.nextInt();
-                    System.out.println("isim :");
-                    String name = scanner.next();
-                    System.out.println("yaş :");
-                    int age = scanner.nextInt();
-                    System.out.println("telefon :");
-                    String phoneNumber = scanner.next();
-                    System.out.println("email :");
-                    String email = scanner.next();
+                String insertSql = "insert into persons(id,name,age,phone_number,e_mail) values (?,?,?,?,?)";
+                PreparedStatement insertStatement = connection.prepareStatement(insertSql);
+                insertStatement.setInt(1, id);
+                insertStatement.setString(2, name);
+                insertStatement.setInt(3, age);
+                insertStatement.setString(4, phoneNumber);
+                insertStatement.setString(5, email);
 
-                    String insertSql = "insert into persons(id,name,age,phone_number,e_mail) values (?,?,?,?,?)";
-                    PreparedStatement insertStatement = connection.prepareStatement(insertSql);
-                    insertStatement.setInt(1, id);
-                    insertStatement.setString(2, name);
-                    insertStatement.setInt(3, age);
-                    insertStatement.setString(4, phoneNumber);
-                    insertStatement.setString(5, email);
-                    int affectedRow = insertStatement.executeUpdate();
-                    if (affectedRow > 0) {
-                        System.out.println("Kişi bilgileri başarılı bir şekilde eklenmiştir");
-                    }
-                    isContinue = false;
+                int affectedRow = insertStatement.executeUpdate();
+                if (affectedRow > 0) {
+                    System.out.println("Kişi bilgileri başarılı bir şekilde eklenmiştir");
                 }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-        }
+                System.out.println("Başka bir kişi kaydetmek ister misiniz? (yes/no)");
 
+                String answerToConsole = scanner.next().toLowerCase();
+                if (answerToConsole.equals("no")) {
+                    System.out.println("kayıtlarınızı tablodan görebilirsiniz");
+                    break;
+                }
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
-    }
+
+}
+

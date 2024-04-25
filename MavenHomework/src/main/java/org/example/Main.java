@@ -14,6 +14,8 @@ public class Main {
     (ÖR: customer.txt dosya adı olsun)
      */
     public static void main(String[] args) {
+        PostgresqlDbConnection postgresqlDbConnection=new PostgresqlDbConnection();
+        postgresqlDbConnection.getConnection();
         InsertData insertData = new InsertData();
         insertData.insertData();
         FourthdbReader fourthdbReader = new FourthdbReader();

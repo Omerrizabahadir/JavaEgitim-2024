@@ -4,17 +4,16 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
+import java.util.Scanner;
 
 public class FourthdbReader {
 
     public void readDataAndWriteFile() {
-        String jdbcUrl = "jdbc:postgresql://localhost:5432/fourtdb";
-        String username = "postgres";
-        String password = "123456";
+        PostgresqlDbConnection postgresqlDbConnection = new PostgresqlDbConnection();
+
+        try (Connection connection = postgresqlDbConnection.getConnection()) {
 
 
-        try {
-            Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
             String selectSql = "select * from persons";
             PreparedStatement selectStatement = connection.prepareStatement(selectSql);
             ResultSet resultSet = selectStatement.executeQuery();
@@ -26,7 +25,7 @@ public class FourthdbReader {
                 String email = resultSet.getString("e_mail");
 
 
-                FileWriter file = new FileWriter("file_1.txt");
+                FileWriter file = new FileWriter("customer.txt");
                 BufferedWriter output = new BufferedWriter(file);
                 while (resultSet.next()) {
                     resultSet.getInt("id");
@@ -38,10 +37,10 @@ public class FourthdbReader {
 
                     file.write("id :" + id + "\nname : " + name + "\nage : " + age + "\nphone number : " + phoneNumber + "\nemail : " + email);
 
-                    file.close();
+
                 }
 
-
+                file.close();
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
