@@ -13,6 +13,7 @@ public class Main {
     Insert sonrası başka bir class'ta bu değerleri select ile okuyup bu bilgileri txt dosyasına at
     (ÖR: customer.txt dosya adı olsun)
      */
+
     public static void main(String[] args) {
         PostgresqlDbConnection postgresqlDbConnection=new PostgresqlDbConnection();
         postgresqlDbConnection.getConnection();

@@ -14,7 +14,6 @@ public class InsertData {
         try (Connection connection = postgresqlDbConnection.getConnection()) {
             Scanner scanner = new Scanner(System.in);
 
-
             while (true) {
                 System.out.println("id :");
                 int id = scanner.nextInt();

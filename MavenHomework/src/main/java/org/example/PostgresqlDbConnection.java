@@ -11,7 +11,6 @@ public class PostgresqlDbConnection {
         String username = "postgres";
         String password = "123456";
 
-
         try {
             return DriverManager.getConnection(jdbcUrl,username,password);
         } catch (SQLException e) {

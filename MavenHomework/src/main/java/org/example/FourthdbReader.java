@@ -12,8 +12,6 @@ public class FourthdbReader {
         PostgresqlDbConnection postgresqlDbConnection = new PostgresqlDbConnection();
 
         try (Connection connection = postgresqlDbConnection.getConnection()) {
-
-
             String selectSql = "select * from persons";
             PreparedStatement selectStatement = connection.prepareStatement(selectSql);
             ResultSet resultSet = selectStatement.executeQuery();
@@ -33,13 +31,9 @@ public class FourthdbReader {
                     resultSet.getInt("age");
                     resultSet.getString("phone_number");
                     resultSet.getString("e_mail");
-
-
+                    
                     file.write("id :" + id + "\nname : " + name + "\nage : " + age + "\nphone number : " + phoneNumber + "\nemail : " + email);
-
-
                 }
-
                 file.close();
             }
         } catch (SQLException e) {
