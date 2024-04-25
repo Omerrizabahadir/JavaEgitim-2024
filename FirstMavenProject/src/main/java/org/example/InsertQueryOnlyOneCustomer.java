@@ -9,13 +9,11 @@ public class InsertQueryOnlyOneCustomer {
     //BİR TANE KAYIT YAPIYOR
     public static void main(String[] args) {
         PostgresqlDbConnection postgresqlDbConnection = new PostgresqlDbConnection();
+        String insertSql = "insert into customers (customer_id,customer_name,contact_name,address,city,postal_code,country) values (?,?,?,?,?,?,?)";
 
-        try (Connection connection = postgresqlDbConnection.getConnection()) {
-            String insertSql = "insert into customers (customer_id,customer_name,contact_name,address,city,postal_code,country) values (?,?,?,?,?,?,?)";
-            PreparedStatement insertStatement = connection.prepareStatement(insertSql);
-
+        try (Connection connection = postgresqlDbConnection.getConnection();
+             PreparedStatement insertStatement = connection.prepareStatement(insertSql)) {  //preparedstatement burada olursa close yapmaya gerek kalmıyor
             //veritabanı bağlantı oluşturma
-
             //INSERT
             insertStatement.setInt(1, 88); //Burdaki id kayıtlıyken çalıştırırsan aynı id var diye hata verecektir
             insertStatement.setString(2, "hasan");
