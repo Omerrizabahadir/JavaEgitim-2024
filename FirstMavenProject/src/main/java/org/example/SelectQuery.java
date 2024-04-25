@@ -4,12 +4,12 @@ import java.sql.*;
 
 public class SelectQuery {
     public static void main(String[] args) {
-        PostgresqlDbConnection postgresqlDbConnection=new PostgresqlDbConnection();
+        PostgresqlDbConnection postgresqlDbConnection = new PostgresqlDbConnection();
+        //SELECT sorgusu
         String selectSql = "select * from customers";
-        try(Connection connection=postgresqlDbConnection.getConnection()) {
 
-            //SELECT sorgusu
-            PreparedStatement selectStatement = connection.prepareStatement(selectSql);
+        try (Connection connection = postgresqlDbConnection.getConnection();
+             PreparedStatement selectStatement = connection.prepareStatement(selectSql)) { //preparedstatement burada olursa close yapmaya gerek kalmıyor
 
             /*tablonun çıktısının sonucunu dönmesi için sonuç döndür dicez,
             delete,update ve insert hepsi için executeUpdate() kullanılır
