@@ -1,0 +1,80 @@
+30-06-2024 20:37:23.463 [restartedMain] INFO  c.e.l.LogExampleApplication - Starting LogExampleApplication using Java 21.0.1 with PID 11496 (/Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example/target/classes started by macbook in /Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example)
+30-06-2024 20:37:23.463 [restartedMain] INFO  c.e.l.LogExampleApplication - Starting LogExampleApplication using Java 21.0.1 with PID 11496 (/Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example/target/classes started by macbook in /Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example)
+30-06-2024 20:37:23.470 [restartedMain] DEBUG c.e.l.LogExampleApplication - Running with Spring Boot v3.3.1, Spring v6.1.10
+30-06-2024 20:37:23.470 [restartedMain] DEBUG c.e.l.LogExampleApplication - Running with Spring Boot v3.3.1, Spring v6.1.10
+30-06-2024 20:37:23.472 [restartedMain] INFO  c.e.l.LogExampleApplication - No active profile set, falling back to 1 default profile: "default"
+30-06-2024 20:37:23.472 [restartedMain] INFO  c.e.l.LogExampleApplication - No active profile set, falling back to 1 default profile: "default"
+30-06-2024 20:37:23.705 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+30-06-2024 20:37:23.706 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+30-06-2024 20:37:25.474 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+30-06-2024 20:37:25.596 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+30-06-2024 20:37:26.902 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+30-06-2024 20:37:26.928 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+30-06-2024 20:37:26.933 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+30-06-2024 20:37:26.934 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+30-06-2024 20:37:27.021 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+30-06-2024 20:37:27.023 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3312 ms
+30-06-2024 20:37:27.197 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+30-06-2024 20:37:27.206 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+30-06-2024 20:37:27.249 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+30-06-2024 20:37:27.295 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+30-06-2024 20:39:40.683 [restartedMain] INFO  c.e.l.LogExampleApplication - Starting LogExampleApplication using Java 21.0.1 with PID 11555 (/Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example/target/classes started by macbook in /Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example)
+30-06-2024 20:39:40.683 [restartedMain] INFO  c.e.l.LogExampleApplication - Starting LogExampleApplication using Java 21.0.1 with PID 11555 (/Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example/target/classes started by macbook in /Users/macbook/Documents/GitHub/JavaEgitim-2024/log-example)
+30-06-2024 20:39:40.689 [restartedMain] DEBUG c.e.l.LogExampleApplication - Running with Spring Boot v3.3.1, Spring v6.1.10
+30-06-2024 20:39:40.689 [restartedMain] DEBUG c.e.l.LogExampleApplication - Running with Spring Boot v3.3.1, Spring v6.1.10
+30-06-2024 20:39:40.692 [restartedMain] INFO  c.e.l.LogExampleApplication - No active profile set, falling back to 1 default profile: "default"
+30-06-2024 20:39:40.692 [restartedMain] INFO  c.e.l.LogExampleApplication - No active profile set, falling back to 1 default profile: "default"
+30-06-2024 20:39:41.012 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+30-06-2024 20:39:41.012 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+30-06-2024 20:39:43.727 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+30-06-2024 20:39:43.863 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
+30-06-2024 20:39:45.299 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+30-06-2024 20:39:45.320 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+30-06-2024 20:39:45.325 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+30-06-2024 20:39:45.325 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+30-06-2024 20:39:45.409 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+30-06-2024 20:39:45.412 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4390 ms
+30-06-2024 20:39:45.538 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+30-06-2024 20:39:45.545 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+30-06-2024 20:39:45.593 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+30-06-2024 20:39:45.646 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
