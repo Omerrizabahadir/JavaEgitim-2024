@@ -1,3 +1,5 @@
+package logging.example1;
+
 public class Main {
 
 

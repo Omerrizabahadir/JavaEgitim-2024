@@ -1,3 +1,5 @@
+package logging.example1;
+
 import java.util.logging.Logger;
 
 public class BankAccount {
@@ -30,7 +32,7 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "BankAccount{" +
+        return "logging.example1.BankAccount{" +
                 "accountNumber='" + accountNumber + '\'' +
                 ", balance=" + balance +
                 '}';
